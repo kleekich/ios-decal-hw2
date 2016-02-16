@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
@@ -14,13 +14,83 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="8" y="162" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.61734435784138408" green="1" blue="0.72577366534961307" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
                         <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
                     </constraints>
-                    <state key="normal" title="N"/>
+                    <state key="normal" title="Next"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCB-e6-IlE">
+                    <rect key="frame" x="5" y="50" width="85" height="100"/>
+                    <color key="backgroundColor" red="0.57881325763552804" green="1" blue="0.26232873874807439" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="La Note"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-7s-A8D">
+                    <rect key="frame" x="98" y="50" width="85" height="100"/>
+                    <color key="backgroundColor" red="0.57881325760000002" green="1" blue="0.26232873870000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="La Note"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-Wh-Z03">
+                    <rect key="frame" x="192" y="50" width="85" height="100"/>
+                    <color key="backgroundColor" red="0.57881325760000002" green="1" blue="0.26232873870000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="La Note"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-Lb-SRP">
+                    <rect key="frame" x="286" y="50" width="85" height="100"/>
+                    <color key="backgroundColor" red="0.57881325760000002" green="1" blue="0.26232873870000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="La Note"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QyQ-QP-8jV">
+                    <rect key="frame" x="17" y="21" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheese Board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-hL-ngO">
+                    <rect key="frame" x="93" y="21" width="95" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great China" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFG-LB-Vcj">
+                    <rect key="frame" x="192" y="21" width="91" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kirala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-fM-BlG">
+                    <rect key="frame" x="307" y="21" width="43" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-wE-Kxo">
+                    <rect key="frame" x="123" y="162" width="39" height="30"/>
+                    <color key="backgroundColor" red="0.6190908648507274" green="0.83958620065776768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Menu"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vx-xp-NxW">
+                    <rect key="frame" x="305" y="162" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.8193526152478392" blue="0.35706430197510319" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Return"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6l-ey-zrc">
+                    <rect key="frame" x="232" y="162" width="45" height="30"/>
+                    <color key="backgroundColor" red="0.58431602978089758" green="0.64527015789084863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Delete"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dE-yv-uiD">
+                    <rect key="frame" x="178" y="162" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.54831589508111434" blue="0.53913012683933914" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Yelp"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEV-y6-0KP">
+                    <rect key="frame" x="59" y="162" width="49" height="30"/>
+                    <color key="backgroundColor" red="0.86458985646873743" green="1" blue="0.56746976496266699" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Picture"/>
                 </button>
             </subviews>
             <constraints>
