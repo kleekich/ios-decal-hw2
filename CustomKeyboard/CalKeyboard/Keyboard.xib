@@ -14,11 +14,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
                     <rect key="frame" x="8" y="162" width="50" height="30"/>
                     <color key="backgroundColor" red="0.61734435784138408" green="1" blue="0.72577366534961307" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="KaK-YB-MQ0"/>
+                        <constraint firstAttribute="width" constant="50" id="eu0-xj-Jov"/>
                         <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
                     </constraints>
                     <state key="normal" title="Next"/>
@@ -88,13 +89,16 @@
                     <state key="normal" title="Yelp"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEV-y6-0KP">
-                    <rect key="frame" x="59" y="162" width="49" height="30"/>
+                    <rect key="frame" x="66" y="162" width="49" height="30"/>
                     <color key="backgroundColor" red="0.86458985646873743" green="1" blue="0.56746976496266699" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Picture"/>
                 </button>
             </subviews>
             <constraints>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="WER-QI-OrO"/>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="YDn-N6-KFf"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="b0a-VZ-fEr"/>
                 <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

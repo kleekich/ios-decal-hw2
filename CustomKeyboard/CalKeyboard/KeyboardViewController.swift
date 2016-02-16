@@ -9,8 +9,28 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
+    //restaurants data
+    var links: [String: String] = ["La Note": "https://www.yelp.com/biz/la-note-restaurant-proven%C3%A7al-berkeley-4",
+                            "Cheese Board": "https://www.yelp.com/biz/cheese-board-pizza-berkeley",
+                            "Great China": "https://www.yelp.com/biz/great-china-berkeley",
+                            "Kirala": "https://www.yelp.com/biz/kirala-japanese-restaurant-berkeley"]
+    
+    //dictionary for lists of menu
+    var menu : [String:[String]] = ["La Note":["Egg Benedict", "French Toast", "Croissant"], "Cheese Board":["Today's Special: Sweet Potato Pizza"], "Great China": ["Walnut Shirimp", "Beijing Duck", "Mafo Tofu"], "Kirala":["Rainbow Roll","Hungry Roll","Lion King"]]
+    
+    
 
     @IBOutlet var nextKeyboardButton: UIButton!
+    //Button for restaurants
+    @IBOutlet var laNoteButton: UIButton!
+    @IBOutlet var cheeseBoardButton: UIButton!
+    @IBOutlet var greatChinaButton: UIButton!
+    @IBOutlet var kiralaButton: UIButton!
+    
+    //Buttons for picture, menu, and yelp links
+    @IBOutlet var pictureButton: UIButton!
+    @IBOutlet var menuButton: UIButton!
+    @IBOutlet var yelpButton: UIButton!
     
     var keyboardView: UIView!
 
