@@ -6,12 +6,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="cheeseBoardButton" destination="ZQw-7s-A8D" id="hGY-Yq-utS"/>
+                <outlet property="deleteButton" destination="o6l-ey-zrc" id="jNV-BM-wyq"/>
+                <outlet property="greatChinaButton" destination="9aZ-Wh-Z03" id="hsp-Vx-Ywu"/>
+                <outlet property="kiralaButton" destination="UMh-Lb-SRP" id="Nuw-Jo-wEv"/>
+                <outlet property="laNoteButton" destination="SCB-e6-IlE" id="E0h-5Q-vqZ"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="returnButton" destination="9vx-xp-NxW" id="yuq-3R-i8m"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="center" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="371" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
@@ -24,75 +30,42 @@
                     </constraints>
                     <state key="normal" title="Next"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCB-e6-IlE">
-                    <rect key="frame" x="5" y="50" width="85" height="100"/>
-                    <color key="backgroundColor" red="0.57881325763552804" green="1" blue="0.26232873874807439" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="La Note"/>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-7s-A8D">
+                    <rect key="frame" x="94" y="50" width="90" height="100"/>
+                    <color key="backgroundColor" red="0.93529273208349917" green="1" blue="0.16521244710602978" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Cheese Board"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-7s-A8D">
-                    <rect key="frame" x="98" y="50" width="85" height="100"/>
-                    <color key="backgroundColor" red="0.57881325760000002" green="1" blue="0.26232873870000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="La Note"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-Wh-Z03">
-                    <rect key="frame" x="192" y="50" width="85" height="100"/>
-                    <color key="backgroundColor" red="0.57881325760000002" green="1" blue="0.26232873870000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="La Note"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-Lb-SRP">
-                    <rect key="frame" x="286" y="50" width="85" height="100"/>
-                    <color key="backgroundColor" red="0.57881325760000002" green="1" blue="0.26232873870000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="La Note"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QyQ-QP-8jV">
-                    <rect key="frame" x="17" y="21" width="60" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheese Board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-hL-ngO">
-                    <rect key="frame" x="93" y="21" width="95" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great China" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFG-LB-Vcj">
-                    <rect key="frame" x="192" y="21" width="91" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kirala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-fM-BlG">
-                    <rect key="frame" x="307" y="21" width="43" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-wE-Kxo">
-                    <rect key="frame" x="123" y="162" width="39" height="30"/>
-                    <color key="backgroundColor" red="0.6190908648507274" green="0.83958620065776768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Menu"/>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-Lb-SRP">
+                    <rect key="frame" x="280" y="50" width="90" height="100"/>
+                    <color key="backgroundColor" red="0.22275831413177305" green="1" blue="0.77718863114206105" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Kirala"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vx-xp-NxW">
-                    <rect key="frame" x="305" y="162" width="46" height="30"/>
+                    <rect key="frame" x="316" y="162" width="50" height="30"/>
                     <color key="backgroundColor" red="1" green="0.8193526152478392" blue="0.35706430197510319" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Return"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6l-ey-zrc">
-                    <rect key="frame" x="232" y="162" width="45" height="30"/>
+                    <rect key="frame" x="257" y="162" width="50" height="30"/>
                     <color key="backgroundColor" red="0.58431602978089758" green="0.64527015789084863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Delete"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dE-yv-uiD">
-                    <rect key="frame" x="178" y="162" width="30" height="30"/>
-                    <color key="backgroundColor" red="1" green="0.54831589508111434" blue="0.53913012683933914" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Yelp"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCB-e6-IlE">
+                    <rect key="frame" x="1" y="50" width="90" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.66678058756566772" blue="0.060779197145587993" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="La Note"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEV-y6-0KP">
-                    <rect key="frame" x="66" y="162" width="49" height="30"/>
-                    <color key="backgroundColor" red="0.86458985646873743" green="1" blue="0.56746976496266699" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Picture"/>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-Wh-Z03">
+                    <rect key="frame" x="187" y="50" width="90" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.44389401573206588" blue="0.18203417968099189" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Great China"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yelp Link Keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lY-7a-uiH">
+                    <rect key="frame" x="112" y="15" width="146" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
@@ -103,7 +76,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="603.5" y="542"/>
         </view>
     </objects>
 </document>
